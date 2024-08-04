@@ -105,7 +105,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
       shorturl: surl,
       root: "1,",
     };
-    const req2 = await axiosInstance.get("https://www.terabox.app/share/list", {
+    const req2 = await axiosInstance.get("https://www.terabox.app/wap/share/filelist", {
       params: params,
     });
     const responseData2 = req2.data;
